@@ -26,7 +26,7 @@ void read(int *str,int size)            /* function that reads the unsorted arra
 void insertion(int *srt,int size)       /* fucntion that implements that insertion sort process */
 {
         int i,j,temp;
-        for(i=0;i<size;i++)     /* To Access the array value through the index i and assigning to Temp variable */
+        for(i=1;i<size;i++)     /* To Access the array value through the index i and assigning to Temp variable */
         {
                 temp = *(srt+i);   /* Temporarily store the value of current element used for insertion into the sorted part of the array.*/
                 j = i-1;
