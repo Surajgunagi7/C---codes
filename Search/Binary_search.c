@@ -26,9 +26,7 @@ int Binary_search(int *list,int size,int key)   /* function definition to implem
 }
 void main()
 {
-        /* function Declarations */
-        void Read_input(int *,int);     
-        int Binary_search(int *,int,int);     
+        /* function Declarations */    
                 int B[50],i,n,search_element,result;
                         printf("Enter the number of elements in the list:");
                         scanf("%d",&n);
