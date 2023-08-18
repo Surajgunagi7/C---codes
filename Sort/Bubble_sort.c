@@ -5,7 +5,6 @@ void readArray(int size, int *array) // Function to read integer elements into a
     int i;
     printf("Enter %d elements:\n", size);
     for (i = 0; i < size; i++) {
-        printf("Element %d: ", i + 1);
         scanf("%d", (array + i));
     }
 }
