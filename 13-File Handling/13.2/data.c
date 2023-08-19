@@ -20,14 +20,12 @@ void mergeFiles(FILE *file1, FILE *file2, FILE *outputFile) {
 
     // Copy any remaining numbers from file1
     while (!feof(file1)) {
-        printf("num1 = %d\n",num1);
         fprintf(outputFile, "%d\n", num1);
         fscanf(file1, "%d", &num1);
     }
 
     // Copy any remaining numbers from file2
     while (!feof(file2)) {
-        printf("num2 = %d\n",num2);
         fprintf(outputFile, "%d\n", num2);
         fscanf(file2, "%d", &num2);
     }
