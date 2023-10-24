@@ -65,7 +65,7 @@ void infixToPrefix(char infix[], char prefix[])
                             if(precedence(stack[top]) > precedence(infix[i]))
                             {
                                      // If operator, handle operator precedence and stack operations
-                                while(precedence(stack[top]) > precedence(infix[i])) {
+                                while(precedence(stack[top]) >= precedence(infix[i])) {
                                     prefix[j++] = pop();
                                 }
                                 push(infix[i]);
